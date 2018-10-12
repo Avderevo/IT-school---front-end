@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-4",
+  "description": "otus-fron-dz-1",
+  "authors": "Yury Avdeev",
+  "license": "ISC",
+  "keywords": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/src/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.2.1",
+    "bootstrap": "4.0.0-alpha.6"
+  }
+}
