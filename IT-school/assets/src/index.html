@@ -3,7 +3,7 @@
 <head>
     //= template/head.html
 </head>
-<header class="header">
+<header class="navbar-wrap">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -39,14 +39,18 @@
 </header>
 <body>
 <main>
-    <section class="slider-wrap">
+    <section class="header-section">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h3>Получи навыки<span> для отличной карьеры в IT</span></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit integer vulputate nisl eu odio porttitor pulvinar nunc congue bitur pretium.</p>
                     <div class="btn-wrap">
-                        <a class="btn mt-3" href="#">Выбрать курс</a><span>  </span><a class="btn mt-3" href="#">Программы лояльности</a>
+                        <div class="mb-5">
+                            <a class="btn mt-3" href="#">Выбрать курс</a><span></span>
+                            <a class="btn mt-3" href="#">Программы лояльности</a>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="col d-none d-lg-block">
@@ -60,12 +64,13 @@
 
     <section id='advance' class="section-advance">
         <div class="container">
-            <div class="section-title">
+            <div class="advance-section-title">
                 <h4>Успеть на ближайшие курсы </h4>
             </div>
             <div class="row">
                 <div class="col-md-4 columns">                        
-                    <div class="card  bord cuadro_intro_hover mb-5 shadow">
+                    <div class="card-advance
+                    cuadro_intro_hover mb-5 shadow">
                         <div class="one">                                                  
                             <h3>Python</h3>                                
                         </div>
@@ -80,7 +85,7 @@
                         </a>
                     </div>
                     <div class="meta">Успеть!</div>           
-                    <div class="card bord cuadro_intro_hover mb-5 shadow">
+                    <div class="card-advance cuadro_intro_hover mb-5 shadow">
                         <div class="two">
                                                   
                             <h3>Java</h3>                                
@@ -99,7 +104,7 @@
                 </div>
                  
                 <div class="col-md-4 columns">                        
-                    <div class="card bord cuadro_intro_hover mb-5 shadow">
+                    <div class="card-advance cuadro_intro_hover mb-5 shadow">
                         <div class="three">                          
                             <h3>PHP</h3>                                
                         </div>
@@ -114,7 +119,7 @@
                         </a>
                     </div>
                     <div class="meta">Успеть!</div>          
-                    <div class="card bord cuadro_intro_hover mb-5 shadow">
+                    <div class="card-advance cuadro_intro_hover mb-5 shadow">
                         <div class="four">
                                                   
                             <h3>JS</h3>                                
@@ -133,12 +138,12 @@
                 </div>
 
                 <div class="col-md-4 columns">
-                    <div class="card bord cuadro_intro_hover mb-5 shadow">
+                    <div class="card-advance cuadro_intro_hover mb-5 shadow">
                         <div class="fife">                           
                             <h3>DevOps</h3>                                
                         </div>
-                        <a href="">
                             <div class="caption">
+                        <a href="">
                                 <div class="blur"></div>
                                 <div class="caption-text">
                                     <h5>DevOps практики и инструменты</h5>
@@ -148,10 +153,10 @@
                         </a>
                     </div>
                     <div class="meta invisible">Успеть!</div> 
-                    <div class="card bord cuadro_intro_hover mb-5 shadow">
+                    <div class="card-advance cuadro_intro_hover mb-5 shadow">
                         <div class="six">
                             
-                            <h3>LINUX</h3>                                
+                            <h3>Linux</h3>                                
                         </div>
                         <a href="">
                             <div class="caption">
@@ -170,81 +175,85 @@
     </section>
 
 
-    <section id="employers" class="section-employers">
+    <section id="additions" class="section-additions">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card-2 mb-4 foo">
-                        <a href=""  class="foo">
-                            <div class="card-2-body">
-                                <div class="row">
-                                    <div class="col-3 d-none d-lg-block">
-                                        <div class="card-icon ">
-                                            <i class="material-icons md-60">monetization_on</i>
+                    <div class="card-additions mb-4">
+                        <a href="" class="hover-additions">
+                            <div class="card-additions-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-3 d-none d-lg-block">
+                                            <div class="card-additions-icon">
+                                                <i class="material-icons md-100">monetization_on</i>
+                                            </div>
                                         </div>
+                                        <div class="col">
+                                            <h5>Трудоустройство</h5>
+                                            <p>Нашим стутентам предлагают работу многие крупные компании</p>
+                                        </div> 
                                     </div>
-                                    <div class="col">
-                                        <h4>Трудоустройство</h4>
-                                        <p>Нашим стутентам предлагают работу многие крупные компании</p>
-                                    </div> 
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="card-2 mb-4 foo">
-                        <a class="foo" href="">
-                            <div class="card-2-body">
-                                <div class="row">
-                                    <div class="col-3 d-none d-lg-block">
-                                        <div class="card-icon ">
-                                            <i class="material-icons md-60">sentiment_satisfied_alt</i>
-                                            
+                   <div class="card-additions mb-4">
+                        <a href="" class="hover-additions">
+                            <div class="card-additions-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-3 d-none d-lg-block">
+                                            <div class="card-additions-icon">
+                                                <i class="material-icons md-100">sentiment_satisfied_alt</i> 
+                                            </div>
                                         </div>
+                                        <div class="col">
+                                            <h5>Программа лояльности</h5>
+                                            <p>И реферальные программы. Как получить скидку?</p>
+                                        </div> 
                                     </div>
-                                    <div class="col">
-                                        <h4>Программа лояльности</h4>
-                                        <p>Нашим стутентам предлагают работу многие крупные компании</p>
-                                    </div> 
                                 </div>
-                                
                             </div>
                         </a>
                     </div>
                 </div>   
                 <div class="col-md-6">
-                    <div class="card-2 mb-4 foo">
-                        <a  class="foo" href="">
-                            <div class="card-2-body">
-                                <div class="row">
-                                    <div class="col-3 d-none d-lg-block">
-                                        <div class="card-icon ">
-                                            <i class="material-icons md-60">import_contacts</i>
+                    <div class="card-additions mb-4">
+                        <a href="" class="hover-additions">
+                            <div class="card-additions-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-3 d-none d-lg-block">
+                                            <div class="card-additions-icon">
+                                                <i class="material-icons md-100">import_contacts</i>
+                                            </div>
                                         </div>
+                                        <div class="col">
+                                            <h5>Блог</h5>
+                                            <p>Сообщество студентов, профессионалов и работодателей</p>
+                                        </div> 
                                     </div>
-                                    <div class="col">
-                                        <h4>Блог</h4>
-                                        <p>Нашим стутентам предлагают работу многие крупные компании</p>
-                                    </div> 
-                                </div>
-                                
+                                </div>                                
                             </div>
                         </a>
                     </div>
-                    <div class="card-2 mb-4 foo">
-                        <a  class="foo" href="">
-                            <div class="card-2-body">
-                                <div class="row">
-                                    <div class="col-3 d-none d-lg-block">
-                                        <div class="card-icon ">
-                                            <i class="material-icons md-60">import_contacts</i>
+                    <div class="card-additions mb-4">
+                        <a href="" class="hover-additions">
+                            <div class="card-additions-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-3 d-none d-lg-block">
+                                            <div class="card-additions-icon">
+                                                <i class="material-icons md-100">important_devices</i>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <h4>Мероприятия</h4>
-                                        <p>Нашим стутентам предлагают работу многие крупные компании</p>
-                                    </div> 
+                                        <div class="col">
+                                            <h5>Мероприятия</h5>
+                                            <p>Задайте вопрос преподователю, примите участие в розыгрыше </p>
+                                        </div> 
+                                    </div>                               
                                 </div>
-                                
                             </div>
                         </a>
                     </div>
@@ -255,54 +264,56 @@
 
     <section id="teachers" class="section-teachers">
         <div class="container">
-            <div class="section-teachers-title">
+            <div class="teachers-title">
                 <div class="row">
-                    <div class="col-md-4">
-                        <a class="teachers-title-container" href="#">Наши преподователи</a>
+                    <div class="col-lg-5 col-md-7 ">
+                        <a class="decor-none" href="#"><h4>Наши преподователи</h4></a>
                     </div>
-                    <div class="col-md">    
-                        <a class="btn-dark" href="#">Стать Преподователем</a>
-                    </div>    
+                    <div class="col">    
+                        <a class="btn-dark decor-none" href="#">Стать Преподователем</a>
+                    </div>                        
                 </div>
             </div>
-            <div class="row text-centre">
-                <div class="col-md-3">
-                    <a href=""><img class="rounded-circle mb-3" src="../img/tch1.jpg" alt="Generic placeholder image" width="180" height="180"></a>
-                    <h5>Джаконда</h5>
-                    <p>DevOps практики и инструменты</p>
-                    
-                </div>
-                <div class="col-md-3">
-                    <a href=""><img class="rounded-circle mb-3" src="../img/th2.jpg" alt="Generic placeholder image" width="180" height="180"></a>
-                    <h5>Александр Сергеевич</h5>
-                    <p>Администратор Linux</p>
-                </div>
-                <div class="col-md-3">
-                    <a href=""><img class="rounded-circle mb-3" src="../img/th3.jpg" alt="Generic placeholder image" width="180" height="180"></a>
-                    <h5>Василий Иваныч</h5>
-                    <p>Наш дворник</p>
-                </div>
-                <div class="col-md-3">
-                    <a href=""><img class="rounded-circle mb-3" src="../img/th4.jpg" alt="Generic placeholder image" width="180" height="180"></a>
-                    <h5>Арнольд</h5>
-                    <p>Администратор Linux</p>
+            <div class="text-center">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 d-none d-md-block">
+                        <a href=""><img class="rounded-circle mb-3" src="../img/tch1.jpg" alt="" width="180" height="180"></a>
+                        <h5>Джаконда</h5>
+                        <p>DevOps практики и инструменты</p>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-none d-md-block">
+                        <a href=""><img class="rounded-circle mb-3" src="../img/th2.jpg" alt="" width="180" height="180"></a>
+                        <h5>Александр Сергеевич</h5>
+                        <p>Администратор Linux</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-none d-md-block">
+                        <a href=""><img class="rounded-circle mb-3" src="../img/th3.jpg" alt="" width="180" height="180"></a>
+                        <h5>Василий Иваныч</h5>
+                        <p>Наш дворник</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-none d-md-block">
+                        <a href=""><img class="rounded-circle mb-3" src="../img/th4.jpg" alt="" width="180" height="180"></a>
+                        <h5>Арнольд</h5>
+                        <p>Администратор Linux</p>
+                    </div>
                 </div>
             </div>
         </div>        
     </section>
 
-    <section id="footer" class="dark" >
+    <section id="footer" class="section-footer" >
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="footer__social">
-                        <div class="footer__social-icons">
+                    <div class="footer-social">
+                        <div class="mb-5">
                             <div>
-                                <a href="#"><img src="../img/picassa.png" class="fb"></a>
-                                <a href="#"><img src="../img/skipe.png" class="fb"></a>
-                                <a href="#"><img src="../img/you-tube.png" class="fb"></a>
-                                <a href="#"><img src="../img/twit.png" class="fb"></a>
-                                <a href="#"><img src="../img/google.png" class="fb"></a>                              
+                                <a href="#"><img src="../img/picassa.png" class="icon-h"></a>
+                                <a href="#"><img src="../img/skipe.png" class="icon-h"></a>
+                                <a href="#"><img src="../img/you-tube.png" class="icon-h"></a>
+                                <a href="#"><img src="../img/twit.png" class="icon-h"></a>
+                                <a href="#"><img src="../img/google.png" class="icon-h"></a>
                             </div>                          
                         </div>
                     </div>
@@ -312,19 +323,19 @@
 
                 </div>
                 <div class="col-md-4">
-                    <div class="footer__social">
-                        <div class="footer__social-icons"> 
-                            <a class="footer-link" href="#">О компании</a>
-                            <a class="footer-link" href="#">Отзывы</a>
+                    <div class="footer-social">
+                        <div class="mb-5"> 
+                            <a class="footer-link decor-none" href="#">О компании</a>
+                            <a class="footer-link decor-none" href="#">Отзывы</a>
                         </div>
                      </div>
                      <div>
-                        <a class="footer-link" href="">Пoльзовательское соглашение</a>
+                        <a class="footer-link decor-none" href="">Пoльзовательское соглашение</a>
                     </div>     
                 </div>
                 <div class="col-5">
-                    <div class="footer__social-icons">                       
-                        <p>По всем вопросам пишите на: <a class="footer-link" href="#">Super@google.com</a></p>                
+                    <div class="mb-5">                       
+                        <p>По всем вопросам пишите на: <a class="footer-link decor-none" href="#">Super@google.com</a></p>
                      </div>  
                 </div>
             </div>
@@ -335,4 +346,4 @@
 
 //= template/footer.html
 </body>
-</html> -->
+</html>
