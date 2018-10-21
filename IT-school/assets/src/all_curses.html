@@ -1,22 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    
-    <!-- Useful meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="robots" content="index, follow, noodp">
-    <meta name="googlebot" content="index, follow">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet" />
-    
-    
-    <title>Home</title>
+    //= template/head.html
 </head>
 <header class="navbar-wrap">
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -27,7 +12,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="all_curses.html">Курсы<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Курсы<span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#">Расписание</a>
                     <a class="nav-item nav-link" href="#">Обучение</a>
                     <a class="nav-item nav-link" href="#">Работа в компаниях</a>
@@ -150,34 +135,28 @@
 
 <body>
 <main>
-    <section class="header-section">
+    <section id="curses-choice-section">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3>Получи навыки<span> для отличной карьеры в IT</span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit integer vulputate nisl eu odio porttitor pulvinar nunc congue bitur pretium.</p>
-                    <div class="btn-wrap">
-                        <div class="mb-5">
-                            <a class="btn btn-my mt-3" href="all_curses.html">Выбрать курс</a><span></span>
-                            <a class="btn btn-my mt-3" href="#">Программы лояльности</a>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col d-none d-lg-block">
-                    <div>
-                        <img src="../img/itv2.png" class="img-fluid mb-3 mt-3">                       
-                    </div>
-                </div>               
+            <div class="all-curses-title text-center">
+                <h2 class=" display-2">Онлайн-курсы</h2>   
             </div>
+            <div>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="btn btn-curses-choice mt-3 active " href="all_curses.html">Основные курсы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-curses-choice mt-3" href="#">Программы подготовки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-curses-choice mt-3" href="#">Курсы в разработке</a>
+                    </li>
+                </ul>
+            </div>            
         </div>    
     </section>
-
-    <section id='advance' class="section-advance">
+    <section id="all-curses">
         <div class="container">
-            <div class="advance-section-title">
-                <h4>Успеть на ближайшие курсы </h4>
-            </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card curses-card gradient-1 shadow curses-card-hover"> 
@@ -229,7 +208,7 @@
                             </div>
                         </a>                                               
                     </div>
-                    <span class="meta-2 ">Успеть!</span>
+                    <span class="meta-2 invisible">Успеть!</span>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">                   
                     <div class="card curses-card gradient-5 shadow">
@@ -242,7 +221,7 @@
                             </div>
                         </a>    
                     </div>
-                    <span class="meta-2">Успеть!</span>
+                    <span class="meta-2 invisible">Успеть!</span>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card curses-card gradient-6 shadow">
@@ -257,138 +236,65 @@
                     </div>
                     <span class="meta-2 invisible">Успеть!</span>
                 </div>
-            </div>
+                 <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card curses-card gradient-7 shadow">
+                        <a href="">
+                            <div class="card-body">
+                                <h3>Разработчик</h3>
+                                <h3>PHP</h3>
+                                <hr class="heading-devider float-left"><br> 
+                                <div><h6> C октября 5 месяцев</h6></div>    
+                            </div>
+                        </a> 
+                    </div>
+                    <span class="meta-2 invisible">Успеть!</span>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">                
+                    <div class="card curses-card gradient-8 shadow">
+                        <a href=""> 
+                            <div class="card-body child">
+                                <h3>Администратор</h3>
+                                <h3> Linux</h3>
+                                <hr class="heading-devider float-left "><br> 
+                                <div><h6> C октября 5 месяцев</h6></div>    
+                            </div>
+                        </a>                                               
+                    </div>
+                    <span class="meta-2 invisible">Успеть!</span>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">                   
+                    <div class="card curses-card gradient-9 shadow">
+                        <a href="">
+                            <div class="card-body">
+                                <h3>DevOps</h3>
+                                <h3>Инжинер</h3>
+                                <hr class="heading-devider float-left"><br> 
+                                <div><h6> C октября 5 месяцев</h6></div>    
+                            </div>
+                        </a>    
+                    </div>
+                    <span class="meta-2 invisible">Успеть!</span>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card curses-card gradient-1 shadow">
+                        <a href="">
+                            <div class="card-body">
+                                <h3>Разработчик</h3>
+                                <h3>PHP</h3>
+                                <hr class="heading-devider float-left"><br> 
+                                <div><h6> C октября 5 месяцев</h6></div>    
+                            </div>
+                        </a>     
+                    </div>
+                    <span class="meta-2 invisible">Успеть!</span>
+                </div>  
             </div>
         </div>
+        
     </section>
 
 
-    <section id="additions" class="section-additions">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card-additions mb-4 transition-scale">
-                        <a href="" class="hover-additions">
-                            <div class="card-additions-body">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-3 d-none d-lg-block">
-                                            <div class="card-additions-icon">
-                                                <i class="material-icons md-100">monetization_on</i>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <h5>Трудоустройство</h5>
-                                            <p>Нашим стутентам предлагают работу многие крупные компании</p>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                   <div class="card-additions mb-4 transition-scale">
-                        <a href="" class="hover-additions">
-                            <div class="card-additions-body">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-3 d-none d-lg-block">
-                                            <div class="card-additions-icon">
-                                                <i class="material-icons md-100">sentiment_satisfied_alt</i> 
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <h5>Программа лояльности</h5>
-                                            <p>И реферальные программы. Как получить скидку?</p>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>   
-                <div class="col-md-6">
-                    <div class="card-additions mb-4 transition-scale">
-                        <a href="" class="hover-additions">
-                            <div class="card-additions-body">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-3 d-none d-lg-block">
-                                            <div class="card-additions-icon">
-                                                <i class="material-icons md-100">import_contacts</i>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <h5>Блог</h5>
-                                            <p>Сообщество студентов, профессионалов и работодателей</p>
-                                        </div> 
-                                    </div>
-                                </div>                                
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card-additions mb-4 transition-scale">
-                        <a href="" class="hover-additions">
-                            <div class="card-additions-body">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-3 d-none d-lg-block">
-                                            <div class="card-additions-icon">
-                                                <i class="material-icons md-100">important_devices</i>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <h5>Мероприятия</h5>
-                                            <p>Задайте вопрос преподователю, примите участие в розыгрыше </p>
-                                        </div> 
-                                    </div>                               
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="teachers" class="section-teachers">
-        <div class="container">
-            <div class="teachers-title">
-                <div class="row">
-                    <div class="col-lg-5 col-md-7 ">
-                        <a class="decor-none" href="#"><h4>Наши преподователи</h4></a>
-                    </div>
-                    <div class="col">    
-                        <a class="btn-dark decor-none" href="#">Стать Преподователем</a>
-                    </div>                        
-                </div>
-            </div>
-            <div class="text-center">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 d-none d-md-block">
-                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="../img/tch1.jpg" alt="" width="180" height="180"></a>
-                        <h5>Джаконда</h5>
-                        <p>DevOps практики и инструменты</p>
-                        
-                    </div>
-                    <div class="col-lg-3 col-md-6 d-none d-md-block">
-                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="../img/th2.jpg" alt="" width="180" height="180"></a>
-                        <h5>Александр Сергеевич</h5>
-                        <p>Администратор Linux</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 d-none d-md-block">
-                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="../img/th3.jpg" alt="" width="180" height="180"></a>
-                        <h5>Василий Иваныч</h5>
-                        <p>Наш дворник</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 d-none d-md-block">
-                        <a href=""><img class="rounded-circle mb-3 transition-scale" src="../img/th4.jpg" alt="" width="180" height="180"></a>
-                        <h5>Арнольд</h5>
-                        <p>Администратор Linux</p>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </section>
 
     <section id="footer" class="section-footer" >
         <div class="container">
@@ -432,6 +338,6 @@
     
 </main>  
 
-<script src="js/main.js"></script>
+//= template/footer.html
 </body>
 </html>
