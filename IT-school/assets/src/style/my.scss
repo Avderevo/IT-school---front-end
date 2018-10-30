@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-//-----header----------
+/* //-----header---------- */
 
 .navbar-wrap{
     top:0;
@@ -37,7 +37,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 36px;
     color: #1bbc9b; 
 }
-//--------header-------
+
+/* //--------header------- */
 
 .header-section {
     position: relative;
@@ -56,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 44px;
     margin: 100px 0 20px;
     font-weight: 700;
- //   letter-spacing: 0.2px;
+ 
 }
 
 .btn-wrap {
@@ -77,8 +78,23 @@ h1, h2, h3, h4, h5, h6 {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    border: 2px solid #fff
+    border: 2px solid #fff;
 }
+
+.header-section button:hover{
+    text-decoration: none;
+    color: #1bbc9b;
+    background-color: #fff;
+
+}
+
+.header-section button:active {
+    color: #1bbc9b;
+    background-color: #fff;
+}
+
+
+
 
 .header-section span {
     margin: 5px 10px;
@@ -88,8 +104,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 5px 10px;
 }
 
-//---------advance--------
-
+/* //---------advance--------
+ */
 .section-advance{
     margin-bottom: 40px;
 }
@@ -277,19 +293,18 @@ h1, h2, h3, h4, h5, h6 {
     visibility: hidden;
 }
 
-//-----------additions-----------
+/* //-----------additions----------- */
 
 .section-additions{
     margin-bottom: 50px;
     position: relative;
     background: #fff;
-//    padding: 60px;
+
 }
 
 .card-additions {
   position: relative;
   display: flex;
- // flex-direction: column;
   min-width: 0;
   min-height: 140px;
   word-wrap: break-word;
@@ -349,7 +364,7 @@ a.hover-additions:hover {
     padding-top: 13px;
 }
 
-//--------teachers--------
+/* //--------teachers-------- */
 
 .section-teachers{
     position: relative;
@@ -391,7 +406,7 @@ a.decor-none{
     text-align: center;
 }
 
-//---------footer-----------
+/* //---------footer----------- */
 
 .section-footer{
     margi-bottom: 0;
@@ -417,8 +432,8 @@ a.decor-none{
     color: #d2d2d2;
 }
 
-// ---------- modal-form ----------
-
+/* // ---------- modal-form ----------
+ */
 .text-center {
     text-align: center!important;
 }
@@ -454,8 +469,8 @@ a.decor-none{
 
 .form-signin .form-control {
     position: relative;
-    box-sizing: border-box;
-    height: auto;
+   //box-sizing: border-box;
+    //height: auto;
     padding: 10px;
     font-size: 16px;
 }
@@ -471,7 +486,7 @@ a.decor-none{
     width: 100%;
     height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 1.5;
     color: #495057;
     background-color: #fff;
@@ -514,6 +529,9 @@ button, input {
 
 }
 
+.label-body{
+    text-align: left;
+}
 
 .transition-scale {
   position: relative;
@@ -528,12 +546,12 @@ button, input {
   
 }
 
-//**********************************
-//*=======++ ALL_CURSES ++=========*
-//**********************************
+/* /*********************************
+/=======++ ALL_CURSES ++=========*
+/*********************************
 
 
-//------choice-section-----------
+//------choice-section----------- */
 
 
 #curses-choice-section {
@@ -572,7 +590,23 @@ button, input {
     border: 1px solid #fff;
 }
 
-//-------all_curses_card------
+.all_curses_header{
+    padding: 0;
+}
+
+.all_curses_header button:hover{
+    text-decoration: none;
+    color: #50779e;
+    background-color: #fff;
+
+}
+
+.all_curses_header button:active {
+    color: #50779e;
+    background-color: #fff;
+}
+
+/* //-------all_curses_card------ */
 
 #all-curses{
     margin-bottom: 50px;
@@ -585,7 +619,6 @@ button, input {
     border-radius: 4px;
     will-change: transform, opacity;
 
-   // min-height: 200px;
 }
 
 
@@ -631,8 +664,8 @@ button, input {
    text-align: left; 
 }
 
-//---------meta-2-----------
-
+/* //---------meta-2-----------
+ */
 .meta-2{
     font-size: 14px;
     color: #fff;
@@ -653,9 +686,9 @@ button, input {
 
 }
 
-//=============================
+/* //=============================
 //--------one_curse_page-------
-//=============================
+//============================= */
 
 .one-curse-section-1 {
     position: relative;
@@ -680,9 +713,9 @@ button, input {
 }
 
 
-//========================================
+/* //========================================
 //------------calendar--------------------
-//========================================
+//======================================== */
 
 
 .calendar-curse-section-header {

@@ -37,8 +37,7 @@
                     <div class="icon-nav">
                         <div class="nav-item dropdown">
 
-                            <a class="dropdown" href="#" data-toggle="modal" data-target="#modalLRForm"><i class="material-icons md-36">&#xe55a;</i>
-                            </a>
+                           <button class="nav-item btn btn-outline-success" href="#" data-toggle="modal" data-target="#modalLRForm">вход или регистрация</button>
 
                             <!-- <a class="dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons md-36">person_pin</i>
                             </a> -->
@@ -60,63 +59,65 @@
     <div class="modal-dialog cascading-modal modal-dialog-centered" role="document">
         <div class="modal-content">          
             <div class="modal-c-tabs">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active modal-text-size" data-toggle="tab" href="#panel1" role="tab">Вход</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link modal-text-size" data-toggle="tab" href="#panel2" role="tab">Регистрация</a>
-                    </li>
-                </ul>
- 
-                <div class="tab-content">                   
-                    <div class="tab-pane fade in show active" id="panel1" role="tabpanel">                        
-                        <div class="modal-body text-center">
-                            <form class="form-signin">
-                                <i class="material-icons md-80 mb-4">&#xe86c;</i>
-                                <label for="inputEmail" class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">zdgtmnfhmfhm</font></font></label>
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-                                <label for="inputPassword" class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fgmxfhmxhgm</font></font></label>
-                                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-                                <div class="checkbox mb-5">
-
-                                </div>
-                                <button class="btn btn-lg btn-my btn-blue-color btn-block" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Войти</font></font></button>
-                            </form>
-                        </div>
-            
-                        <div class="text-center mb-4" role="tablist">
-                            <button type="button" class="btn btn-link"  data-toggle="modal" data-target="#pass" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">Забыли пароль?</span>
-                            </button>
-
-                        </div>
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active modal-text-size" data-toggle="tab" href="#panel1" role="tab">Вход</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-text-size" data-toggle="tab" href="#panel2" role="tab">Регистрация</a>
+                </li>
+              </ul>
+              <div class="tab-content">                   
+                <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                  <div class="modal-body">
+                    <div class="text-center">
+                        <i class="material-icons md-80 mb-4 mt-4 ">&#xe86c;</i>
                     </div>
- 
-                    <div class="tab-pane fade" id="panel2" role="tabpanel">
-                        <div class="modal-body text-center">
-                            <form class="form-signin">
-                                <i class="material-icons md-80 mb-4">&#xe853;</i>
-                                <label for="inputEmail" class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">zdgtmnfhmfhm</font></font></label>
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-                                <label for="inputEmail" class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">zdgtmnfhmfhm</font></font></label>
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-                                <label for="inputEmail" class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">zdgtmnfhmfhm</font></font></label>
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-                                <label for="inputPassword" class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fgmxfhmxhgm</font></font></label>
-                                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-                                <div class="checkbox mb-5">
+                    <form method="post" action="{% url 'users:login' %}" class=" form-signin js-user-login-form mb-4">
+                    
+                       
+                      <label for="inputEmail">Email</label>
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Электронный адресс" required="required" data-error="Valid email is required.">
 
-                                </div>
-                                <button class="btn btn-lg btn-my btn-blue-color btn-block" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Регистрация</font></font></button>
-                            </form>
-                        </div>            
-                        <div >
-                            <div class="text-center mb-4">
-                            </div>                            
-                        </div>
-                    </div>                  
+                      <label for="inputPassword">Пароль</label>
+                      <input type="password" id="form_password" name="password" class="form-control" placeholder="Пароль" required="">
+                      <div class="checkbox mb-5"></div>     
+                      <button class="btn btn-lg btn-my btn-blue-color btn-block" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Войти</font></font></button>
+                    </form>
+                  </div>            
+                  <div class="text-center mb-4" role="tablist">
+                    <button type="button"   data-url="{% url 'users:remind' %}" class="btn btn-link js-remind-password">
+                      <span aria-hidden="true">Забыли пароль?</span>
+                    </button> 
+                  </div>
+
                 </div>
+                <div class="tab-pane fade " id="panel2" role="tabpanel">                        
+                  <div class="modal-body">
+                    <div class="text-center">
+                        <i class="material-icons md-80 mb-4 mt-4 ">&#xe853;</i>
+                    </div>
+                    <form method="post" action="{% url 'users:create' %}" class=" form-signin js-user-create-form mb-4">
+
+                        
+                      <label for="inputName">Имя</label>
+                      <input id="form_name" type="text" name="username"class="form-control" placeholder="Ваше имя" required="required"/>
+
+                      <label for="inputEmail">Email</label>
+                      <input  type="email" name="email" class="form-control" placeholder="Ваш email" required="required"/> 
+
+                      <label for="inputPassword">Пароль</label>
+                      <input type="password" name="password" id="1password" class="form-control" placeholder="Пароль" required="required" minlength="5" />
+
+                      <label for="repeat">Повторить пароль</label>
+                      <input type="password" id="repeat_password" name="repeat_password" class="form-control" placeholder="Повторите пароль" required="required" minlength="5" data-rule-equalto ="#1password" />
+
+                      <div class="checkbox mb-5"></div>
+                      <button class="btn btn-lg btn-my btn-blue-color btn-block" type="submit"><font style="vertical-align: inherit;">Регистрация</font></button>
+                    </form>
+                  </div>   
+                </div>                
+              </div>
             </div>
         </div>
     </div>
@@ -126,9 +127,12 @@
 <div class="modal" id="pass" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">     
-            <div class="modal-body text-center">
-                <form class="form-signin">
+            <div class="modal-body">
+                <div class="text-center">
                     <i class="material-icons md-80 mb-4">&#xe0e1;</i>
+                </div>
+                <form class="form-signin">
+                    
                     <label for="inputEmail" class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">zdgtmnfhmfhm</font></font></label>
                     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
                     <div class="checkbox mb-5">
@@ -342,44 +346,44 @@
 
 </main>  
 <section id="footer" class="section-footer" >
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer-social">
-                        <div class="mb-5">
-                            <div>
-                                <a href="#"><img src="../img/picassa.png" class="icon-h"></a>
-                                <a href="#"><img src="../img/skipe.png" class="icon-h"></a>
-                                <a href="#"><img src="../img/you-tube.png" class="icon-h"></a>
-                                <a href="#"><img src="../img/twit.png" class="icon-h"></a>
-                                <a href="#"><img src="../img/google.png" class="icon-h"></a>
-                            </div>                          
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer-social">
+                    <div class="mb-5">
+                        <div>
+                            <a href="#"><img src="../img/picassa.png" class="icon-h"></a>
+                            <a href="#"><img src="../img/skipe.png" class="icon-h"></a>
+                            <a href="#"><img src="../img/you-tube.png" class="icon-h"></a>
+                            <a href="#"><img src="../img/twit.png" class="icon-h"></a>
+                            <a href="#"><img src="../img/google.png" class="icon-h"></a>
+                        </div>                          
                     </div>
-                    <div>
-                        <p>2018 г.</p>
-                    </div>    
+                </div>
+                <div>
+                    <p>2018 г.</p>
+                </div>    
 
-                </div>
-                <div class="col-md-4">
-                    <div class="footer-social">
-                        <div class="mb-5"> 
-                            <a class="footer-link decor-none" href="#">О компании</a>
-                            <a class="footer-link decor-none" href="#">Отзывы</a>
-                        </div>
-                     </div>
-                     <div>
-                        <a class="footer-link decor-none" href="">Пoльзовательское соглашение</a>
-                    </div>     
-                </div>
-                <div class="col-5">
-                    <div class="mb-5">                       
-                        <p>По всем вопросам пишите на: <a class="footer-link decor-none" href="#">Super@google.com</a></p>
-                     </div>  
-                </div>
             </div>
-        </div>      
-    </section>
+            <div class="col-md-4">
+                <div class="footer-social">
+                    <div class="mb-5"> 
+                        <a class="footer-link decor-none" href="#">О компании</a>
+                        <a class="footer-link decor-none" href="#">Отзывы</a>
+                    </div>
+                 </div>
+                 <div>
+                    <a class="footer-link decor-none" href="">Пoльзовательское соглашение</a>
+                </div>     
+            </div>
+            <div class="col-5">
+                <div class="mb-5">                       
+                    <p>По всем вопросам пишите на: <a class="footer-link decor-none" href="#">Super@google.com</a></p>
+                 </div>  
+            </div>
+        </div>
+    </div>      
+</section>
 <script src="js/main.js"></script>
 </body>
 </html>
