@@ -686,32 +686,6 @@ button, input {
 
 }
 
-/* //=============================
-//--------one_curse_page-------
-//============================= */
-
-.one-curse-section-1 {
-    position: relative;
-    background: -webkit-linear-gradient(30deg,#ee757e 58%,#ff8690 30%);
-    margin-bottom: 50px;
-    margin-top: 0;
-    padding: 50px;
-}
-
-.one-curse-section-1 h4{
-    color: #fff;
-    margin-top: 10px;
-    margin-bottom: 25px;
-}
-
-.one-curse-section-1 p{
-    color: #fff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
 
 /* //========================================
 //------------calendar--------------------
@@ -736,7 +710,6 @@ button, input {
         }
     }
      @media (max-width: 767px){
-        height: 300px;
         .display-3 {
             font-size: 3rem;
             
@@ -852,3 +825,135 @@ button, input {
 }
 
 
+/* =============================
+=======one_course.html==========
+============================= */
+
+#one-course-header {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding: 50px;
+    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+    @media (max-width: 1400px){
+        .display-3 {
+            font-size: 3.5rem;
+
+        }
+      }
+    @media (max-width: 900px){
+        .display-3 {
+            font-size: 3rem;
+            
+        }
+    }
+     @media (max-width: 767px){
+        .display-3 {
+            font-size: 3rem;
+            
+        }
+    }
+}
+
+.one-course-header-title h4{
+    color: #fff;
+    
+}
+
+.one-course-header-title p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.btn-one-course-header {
+    background: 0 0;
+    padding: 10px 24px;
+    font-family: Open sans;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    margin-right: 2rem;
+    margin-bottom: 2rem;   
+}
+
+
+.one-course-header-title a:hover{
+    text-decoration: none;
+    color: #013A6B;
+    background-color: #fff;
+
+}
+
+.one-course-header-title a:active {
+    color: #013A6B;
+    background-color: #fff;
+}
+
+
+
+.one-course-header-my-card{
+    width: 18rem;
+    margin-right: 10px;
+    float: right;
+    background-color: #004E95;
+    border: 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    
+}
+
+.one-course-header-my-card p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+
+.one-course-header-my-card h5{
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+.btn-one-course-header-my-card {
+    background: #fff;
+    padding: 8px 18px;
+    font-family: Open sans;
+    font-size: 14px;
+    color: #004E95;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 2px solid #004E95;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.one-course-header-my-card a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #004E95;
+    border: 2px solid #fff;
+
+}
+
+.one-course-header-my-card a:active {
+    color: #fff;
+    background-color: #004E95;
+}
