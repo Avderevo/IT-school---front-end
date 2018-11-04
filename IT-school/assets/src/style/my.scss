@@ -831,9 +831,9 @@ button, input {
 
 #one-course-header {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     margin-top: 0;
-    padding: 50px;
+    padding: 30px;
     background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
     @media (max-width: 1400px){
         .display-3 {
@@ -870,7 +870,7 @@ button, input {
     background: 0 0;
     padding: 10px 24px;
     font-family: Open sans;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -884,18 +884,48 @@ button, input {
 }
 
 
-.one-course-header-title a:hover{
+#positiv-btn a:hover{
     text-decoration: none;
     color: #013A6B;
     background-color: #fff;
 
 }
 
-.one-course-header-title a:active {
+#positiv-btn a:active {
     color: #013A6B;
     background-color: #fff;
 }
 
+.btn-one-course-header-orange {
+    background: #f24903;
+    padding: 14px 24px;
+    font-family: Open sans;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 2px solid #f24903;
+    margin-right: 2rem;
+    margin-bottom: 2rem;   
+}
+
+
+#orange-btn a:hover{
+    text-decoration: none;
+    color: #f24903;
+    background-color: #fff;
+    border: 2px solid  #f24903;
+
+}
+
+#orange-btn a:active {
+    color: #f24903;
+    background-color: #004E95;
+}
 
 
 .one-course-header-my-card{
@@ -956,4 +986,148 @@ button, input {
 .one-course-header-my-card a:active {
     color: #fff;
     background-color: #004E95;
+}
+
+/* ------------#nav-menu------------------- */
+
+.nav-menu {   
+    border-bottom: 1px solid #dcdcdc;
+    position: relative; 
+    color: #fff;
+    z-index: 20;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.nav-items-course{
+    max-height: 60px;
+    white-space: nowrap;
+    display: table;
+    padding-right: 10px;
+    padding-right: 0;
+    width: 100%;
+    max-height: 60px;
+}
+
+.nav-item-menu{
+    display: inline-block;
+    padding: 0 25px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    vertical-align: top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 30px; 
+}
+
+.nav-menu-link{
+    display: inline-block;
+}
+
+.nav-menu-color{
+  background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );  
+}
+
+/* ----------#about-course----------*/
+#about-course{
+    margin-bottom: 50px;
+}
+
+#course-content p{
+    font-weight: 300;
+    font-size: 18px;
+    color: #050505;
+    line-height: 30px;
+    margin-left: 0;
+}
+
+
+.about-course-title{
+    font-weight: 300;
+    font-size: 36px;
+    color: #050505;
+    line-height: 30px;
+    padding: 0;
+}
+
+#about-course ul{
+    padding: 0 0 0 20px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.material-icons.md-70 { 
+    font-size: 70px;
+    color: #1bbc9b; 
+}
+
+/* -------#course-teachers------- */
+
+#course-teachers{
+    position: relative;
+    background: #f8f8f8;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+
+.no-border-card{
+    border: 0;
+}
+
+.heading-r {
+   // width: 30rem;
+    height: 1px;
+    border: 0;
+    background: #f24903;
+    text-align: center;
+}
+
+.about-course-teachers{
+    font-weight: 300;
+    font-size: 22px;
+    color: #050505;
+    line-height: 30px;
+    padding: 0;
+
+}
+
+.about-course-teacher{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+.course-teachers-list {
+    margin: 0 -20px;
+}
+
+.course-teacher-box{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    
+}
+
+.course-teacher-name{
+    padding-left: 15px;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 14px;
+    color: #050505;
+    line-height: 17px;
+    text-decoration: none;
+    -webkit-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial; 
 }

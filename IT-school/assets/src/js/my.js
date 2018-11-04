@@ -34,3 +34,19 @@ function MakehrefHover(row) {
     href[0].style.width = "10rem";
 });
 }
+
+$(document).ready(function() {
+    var header_h = $("#one-course-header").innerHeight();
+    var header_1_h = $("#header-1").innerHeight();
+    var header_ = header_h + header_1_h
+    var menu = $('#menu');  
+    $(window).scroll(function(){
+        var top = $(window).scrollTop();
+        if(top < header_){
+            menu.css({position: 'relative'});
+        } else {
+            menu.css({'top': '0', position: 'fixed'});
+        }
+    });
+});
+
