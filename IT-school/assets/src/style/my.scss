@@ -995,7 +995,7 @@ button, input {
     position: relative; 
     color: #fff;
     z-index: 20;
-    height: 60px;
+    height: 70px;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -1012,8 +1012,9 @@ button, input {
 
 .nav-item-menu{
     display: inline-block;
-    padding: 0 25px;
-    line-height: 60px;
+    padding: 0 50px;
+    height: 100%;
+    line-height: 70px;
     font-size: 18px;
     color: #fff;
     text-decoration: none;
@@ -1023,7 +1024,7 @@ button, input {
     -ms-user-select: none;
     user-select: none;
     cursor: pointer;
-    margin-left: 30px; 
+    margin-left: 0; 
 }
 
 .nav-menu-link{
@@ -1034,9 +1035,21 @@ button, input {
   background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );  
 }
 
+#menu a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #004E95;
+}
+
+#menu a:active {
+    color: #fff;
+    background-color: #004E95;
+
+}
 /* ----------#about-course----------*/
 #about-course{
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
+    padding-top: 4rem; 
 }
 
 #js-course-content p{
@@ -1056,17 +1069,30 @@ button, input {
     padding: 0;
 }
 
+.card-one-course-about{
+    background: #f8f8f8;
+    border: 0;
+    border-bottom: .8rem solid #f24903;
+    padding-top: 1rem;
+}
+
 #about-course ul{
     padding: 0 0 0 20px;
     border: 0;
+    border-radius: 4px;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
 
-.material-icons.md-70 { 
-    font-size: 70px;
-    color: #1bbc9b; 
+.card-one-course-icon{
+    background: #f8f8f8;
+    border: 0;
+}
+
+.material-icons.md-90 { 
+    font-size: 90px;
+    color: #013A6B; 
 }
 
 /* -------#course-teachers------- */
@@ -1086,7 +1112,7 @@ button, input {
    // width: 30rem;
     height: 1px;
     border: 0;
-    background: #f24903;
+    background: #2c6d82;
     text-align: center;
 }
 
@@ -1410,3 +1436,28 @@ button, input {
     padding: 5rem 0 5rem 0;
 }
 
+.course-process-navbar {
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.course-process-nav-item{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 25px 0 25px 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #4a90e2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-break: break-word;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+
+}
