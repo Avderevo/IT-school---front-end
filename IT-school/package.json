@@ -22,6 +22,7 @@
   },
   "main": "gulpfile.js",
   "scripts": {
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

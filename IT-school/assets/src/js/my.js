@@ -50,3 +50,18 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    var lk_header = $("#lk-header").innerHeight();
+    var header_1 = $("#header-1").innerHeight();
+    var header_ = lk_header + header_1
+    var menu = $('#float-nav');
+    $(window).scroll(function(){
+        var top = $(window).scrollTop();
+        if(top < header_){
+            menu.css({position: 'relative'});
+        } else {
+            menu.css({'top': '0', position: 'fixed'});
+        }
+    });
+});
+
